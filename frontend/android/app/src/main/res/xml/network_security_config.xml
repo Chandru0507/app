@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Cleartext HTTP is permitted ONLY for the hosts that serve the backend.
+         10.0.2.2 / localhost : the Android emulator's alias for the host machine.
+         10.155.160.233       : the laptop's LAN address, used by the `device`
+                                build on a physical phone (see frontend/.env.device).
+         There is deliberately no <base-config> entry, so cleartext stays denied
+         for every other host. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.155.160.233</domain>
+    </domain-config>
+</network-security-config>

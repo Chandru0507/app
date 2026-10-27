@@ -1,0 +1,14 @@
+
+{
+  "appId": "com.kavach.app",
+  "appName": "KAVACH",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "insetsHandling": "disable"
+  }
+}
